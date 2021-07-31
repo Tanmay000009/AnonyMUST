@@ -9,3 +9,7 @@ module.exports.login = function (req, res) {
 module.exports.payment = function (req, res) {
   res.render('payment');
 };
+
+module.exports.submitPay = function (req, res) {
+  res.render('submitPay');
+};

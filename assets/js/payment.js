@@ -192,32 +192,42 @@ $(document).ready(async function() {
     var accounts = await web3.eth.requestAccounts()
     var userAcc = accounts[0];
     var recAcc = "0xA62EDE996E17FA4315dc7D6E8cd2ef010524340d";
-    console.log(userAcc);
     contract = new web3.eth.Contract(abi,address);
 
     
     var balances = await contract.methods.balances(userAcc).call();
-    console.log(balances);
+    $('.balance').text(balances);
 
-    var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
-        contract.methods.balances(userAcc).call().then( function(bal) {
-            console.log(bal);
-        });
-    });
+    // var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
+    //     contract.methods.balances(userAcc).call().then( function(bal) {
+    //         console.log(bal);
+    //     });
+    // });
     
-    var send = await contract.methods.sendData(recAcc,"alpha",50).send({from : userAcc}).then( function () {
-        contract.methods.balances(userAcc).call().then( function(bal) {
-            console.log(bal);
-        });
-    })
-    var data = await contract.methods.getData().call().then( function(data) {
-        console.log(data);
-        return data[0];
-    })
-    console.log(data);
-    var send = await contract.methods.verifyData(data,true,50).send({from : userAcc}).then(function() {
-        contract.methods.balances(userAcc).call().then( function(bal) {
-            console.log(bal);
+    // var send = await contract.methods.sendData(recAcc,"alpha",50).send({from : userAcc}).then( function () {
+    //     contract.methods.balances(userAcc).call().then( function(bal) {
+    //         console.log(bal);
+    //     });
+    // })
+    // var data = await contract.methods.getData().call().then( function(data) {
+    //     console.log(data);
+    //     return data[0];
+    // })
+    // console.log(data);
+    // var send = await contract.methods.verifyData(data,true,50).send({from : userAcc}).then(function() {
+    //     contract.methods.balances(userAcc).call().then( function(bal) {
+    //         console.log(bal);
+    //     });
+    // })
+    $(".adddummymoney").click(async function(event) {
+        event.preventDefault();
+        contract = new web3.eth.Contract(abi,address);
+    
+        var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
+            contract.methods.balances(userAcc).call().then( function(bal) {
+                $('.balance').text(bal);
+            });
         });
     })
 })
+
