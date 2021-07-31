@@ -3,11 +3,12 @@ const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
 const app = express();
 const db = require('./config/mongoose');
+const Web3 = require('web3')
 // Connect db
 db();
 
 const PORT = process.env.PORT || 3000;
-
+app.use(express.urlencoded());
 // For passport
 const session = require('express-session');
 const passport = require('passport');
@@ -18,7 +19,7 @@ const MongoStore = require('connect-mongo');
 dotenv.config({path: 'config.env'});
 
 app.use(express.static(__dirname + "/assets"));
-app.use(express.urlencoded());
+
 app.use(cookieParser());
 
 // View Engine

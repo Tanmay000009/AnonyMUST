@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/payment.css">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Add Tokens</title>
+</head>
+<body>
+    
+Balance : <span class="balance">xyz</span>
+<div class="container">
+  <div id="Checkout" class="titleofpayment inline">
+      <h1>Add 100 tokens to Wallet</h1>
+
+      <form id="target">
+          <!-- <div class="form-group">
+            <div class="form-group">
+                <label or="NameOnCard">Amount of tokens you want</label>
+                <input id="NameOnCard" name="data" class="amountOfTokens form-control" type="number" ></input>
+            </div> -->
+            <div id="PayButton" class="adddummymoney btn btn-block btn-success submit-button">
+                <span class="submit-button-lock"></span>
+                <span class="align-middle">Add tokens</span>
+            </div>
+              <a href="/submitPay" id="PayButton" class="btn btn-block btn-success submit-button" >
+              <span class="submit-button-lock"></span>
+              <span class="align-right">Proceed</span>
+            </a>
+          </div>
+      </form>
+  </div>
+</div>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.0/web3.min.js" integrity="sha512-0/nXBDmnbXRIkGvwIK2UWg4F8xscIFZHGl2sWevr6f0DnFEqZh4uTw78qLQYC16tVxbbHhoaaZLSBoIopZQucg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/payment.js"></script>
+</body>
+</html>

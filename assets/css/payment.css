@@ -1,0 +1,164 @@
+body {
+    background: #FEF8F8;
+  }
+  
+  
+  #PayButton {
+    outline: 0!important;
+    height: 42px;
+    font-size: 16px;
+    background-color: #54C7C3!important;
+    border: none;
+  }
+  
+  #PayButton:hover {
+    background-color: #6DCECB!important;
+  }
+  
+  #PayButton:active {
+    background-color: #4FBCB9!important;
+  }
+  
+  #PayButton:disabled {
+    background: rgba(84, 199, 195, .5)!important;
+    color: #FFF!important;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  #Checkout {
+    z-index: 100001;
+    width: 50%;
+    min-width: 300px;
+    height: 100%;
+    min-height: 100%;
+    background: 0 0 #ffffff;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  #Checkout>h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background: #EEF2F4;
+    color: #5D6F78;
+    font-size: 24px;
+    font-weight: 300;
+    border-bottom: 1px solid #DEDEDE;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  #Checkout>form {
+    margin: 0 25px 25px;
+  }
+  
+  label {
+    color: #46545C;
+    margin-bottom: 2px;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input {
+    padding-right: 25px;
+  }
+  
+  .input-container>i, a[role="button"] {
+    color: #d3d3d3;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .input-container>i:hover, a[role="button"]:hover {
+    color: #777;
+  }
+  .amount-placeholder {
+    font-size: 20px;
+    height: 34px;
+  }
+  
+  .amount-placeholder>button {
+    float: right;
+    width: 60px;
+  }
+  
+  .amount-placeholder>span {
+    line-height: 34px;
+  }
+  
+  .card-row {
+    text-align: center;
+    margin: 20px 25px 10px;
+  }
+  
+  .card-row span {
+    width: 48px;
+    height: 30px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: contain;
+  }
+  
+  .card-image {
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    background-position: right 2px center;
+    background-size: auto 90%
+  }
+  
+  .cvc-preview-container {
+    overflow: hidden;
+  }
+  
+  .cvc-preview-container.two-card div {
+    width: 48%;
+    height: 80px;
+  }
+  
+  .cvc-preview-container.two-card div.amex-cvc-preview {
+    float: right;
+  }
+  
+  .cvc-preview-container.two-card div.visa-mc-dis-cvc-preview {
+    float: left;
+  }
+  
+  .cvc-preview-container div {
+    height: 160px;
+  }
+  
+  .align-middle {
+    vertical-align: middle;
+  }
+  
+  input {
+    box-shadow: none!important;
+  }
+  
+  input:focus {
+    border-color: #b0e5e3!important;
+    background-color: #EEF9F9!important;
+  }
+
+  .submit-button-lock {
+    margin-top: 1%;
+  }
+
+  
