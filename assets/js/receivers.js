@@ -230,7 +230,7 @@ $(document).ready(async function() {
             console.log(bal);
         });
 
-        var str = 'http://localhost:3000/verify/:' + id;
+        var str = 'https://hackersxd.herokuapp.com/verify/:' + id;
         window.location.href = str;
     })
     })
