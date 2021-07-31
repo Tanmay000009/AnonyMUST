@@ -19,5 +19,12 @@ module.exports.submitPay = function (req, res) {
 module.exports.successUser = function (req, res) {
   var id = req.params.id;
   var msg = req.params.msg;
+  Information.create({id : id, msg: msg, status : "tbd"},(err,info) => {
+    if (err) {
+      console.log("Error in creating info",err);
+      res.redirect('back')
+    }
+    console.log(info);
+  })
   res.render('successUser');
 };
