@@ -22,3 +22,9 @@ Run command :
 3. Sujana Kola
 4. Tanmay Vyas
 5. Soham Bhattacharjee
+
+Track - Open Innovations
+
+**To navigate to the ppt** :  
+1. Open the folder "presentation." 
+2. Choose the file **HACKERS-XD.pptx** .

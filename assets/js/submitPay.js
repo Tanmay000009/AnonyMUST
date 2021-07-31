@@ -3,7 +3,7 @@ var contract;
 $(document).ready(async function() {
     web3 = new Web3(web3.currentProvider);
     
-    var address = "0x154270Ce1F3017093478e24e7cadd1eb243a487A";
+    var address = "0xdfA431bC5bb061Bf72B0060F4A55414A7A1d2caA";
 
     var abi = [
         {
@@ -188,7 +188,9 @@ $(document).ready(async function() {
             "stateMutability": "nonpayable",
             "type": "function"
         }
-    ];
+    ]
+    
+    ;
     var accounts = await web3.eth.requestAccounts()
     var userAcc = accounts[0];
     var recAcc = "0xA62EDE996E17FA4315dc7D6E8cd2ef010524340d";
@@ -234,7 +236,7 @@ $(document).ready(async function() {
             console.log(data);
             return data;
         })
-        var str = 'http://localhost:3000/successUser/:' + data[0] +'/:' + data[1]; 
+        var str = 'https://hackersxd.herokuapp.com/successUser/:' + data[0] +'/:' + data[1]; 
         window.location.href = str;
     })
 })
