@@ -13,6 +13,10 @@ const infoSchema = new mongoose.Schema({
     status: {
         type: String,
         required: true
+    },
+    files: {
+        type: Number,
+        required: true
     }
 }, {
     timestamps: true

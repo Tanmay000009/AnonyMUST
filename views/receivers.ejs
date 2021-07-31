@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/receivers.css">
+    <title>UPLOAD</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body" class="main">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>Identity</h4>
+                                    <p class="text-secondary mb-1">0x7402859b855a8fFFab7f6a713Fdf321BEE10dd0c</p>
+                                    <button class="btn btn-primary"><a href="/users/logout">Log Out</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <% if (info) {%>
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Message</h6>
+                                
+                                    <div>
+                                        <div><%= info.msg%></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <% } else {%>
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0">No new information</h6>
+                                    </div>
+                                    <hr>
+                                <% } %>
+                                <% if (info) {%>
+                                <span class="infoid" style="visibility: hidden;"><%= info.id %></span>
+                                <% } %>
+
+                                
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a class="btn btn-info " href="#"><%= info.filekamsg %></a>
+                                        <a class="btn btn-info infoisverified"  href="#">Verify</a>
+                                        <a class="btn btn-info infoisnotverified"  href="#">Decline</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.0/web3.min.js" integrity="sha512-0/nXBDmnbXRIkGvwIK2UWg4F8xscIFZHGl2sWevr6f0DnFEqZh4uTw78qLQYC16tVxbbHhoaaZLSBoIopZQucg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/receivers.js"></script>
+</body>
+</html>

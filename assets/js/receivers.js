@@ -1,6 +1,7 @@
 var contract;
 
 $(document).ready(async function() {
+    console.log("HIIIIIIIIIIIIIIIIIIIIIIIIIII")
     web3 = new Web3(web3.currentProvider);
     
     var address = "0x154270Ce1F3017093478e24e7cadd1eb243a487A";
@@ -195,8 +196,8 @@ $(document).ready(async function() {
     contract = new web3.eth.Contract(abi,address);
 
     
-    var balances = await contract.methods.balances(userAcc).call();
-    $('.balance').text(balances);
+    // var balances = await contract.methods.balances(userAcc).call();
+    // $('.balance').text(balances);
 
     // var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
     //     contract.methods.balances(userAcc).call().then( function(bal) {
@@ -219,23 +220,22 @@ $(document).ready(async function() {
     //         console.log(bal);
     //     });
     // })
-    $(".submitPay").click(async function(event) {
-        $('.submitPayTitle').text('Kindly wait while we confirm the transaction')
+    $(".infoisverified").click(async function(event) {
         event.preventDefault();
-        contract = new web3.eth.Contract(abi,address);
-        var msg = $('.informationProvided').val();
-        var send = await contract.methods.sendData(recAcc,msg,50).send({from : userAcc}).then( function () {
-            contract.methods.balances(userAcc).call().then( function(bal) {
-                $('.balance').text(balances);
-            });
-        })
-        var data = await contract.methods.getData().call().then( async function(data) {
-            var xd = await $('.balance').text(balances);
-            console.log(data);
-            return data;
-        })
-        var str = 'http://localhost:3000/successUser/:' + data[0] +'/:' + data[1]; 
+        var id = $('.infoid').text();
+        id = id.slice(1,);
+        id = Number(id);
+        var send = await contract.methods.verifyData(id,true,50).send({from : userAcc}).then(function() {
+        contract.methods.balances(userAcc).call().then( function(bal) {
+            console.log(bal);
+        });
+
+        var str = 'http://localhost:3000/verify/:' + id;
         window.location.href = str;
+    })
+    })
+    $(".infoisnotverified").click(async function(event) {
+        event.preventDefault();
     })
 })
 
