@@ -25,6 +25,6 @@ Run command :
 
 Track - Open Innovations
 
-**To navigate to the ppt : ** 
+**To navigate to the ppt** :  
 1. Open the folder presentation. 
-2. Choose the file HACKERS-XD.pptx 
+2. Choose the file **HACKERS-XD.pptx** .
