@@ -8,6 +8,7 @@ router.get('/', homeController.home);
 router.get('/login',homeController.login);
 router.get('/payment',homeController.payment);
 router.get('/submitPay',homeController.submitPay);
+router.get('/successUser/:id/:msg',homeController.successUser);
 //router.get('/about', homeController.about);
 
 router.use('/users', require('./user'));

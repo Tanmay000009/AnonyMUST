@@ -219,20 +219,23 @@ $(document).ready(async function() {
     //         console.log(bal);
     //     });
     // })
-    $(".adddummymoney").click(async function(event) {
+    $(".submitPay").click(async function(event) {
+        $('.submitPayTitle').text('Kindly wait we confirm the transaction')
         event.preventDefault();
-        $(".titleofpayment").text("Kindly wait patiently while transaction takes place")
         contract = new web3.eth.Contract(abi,address);
-        
-        // var amount = $('.amountOfTokens').val();
-        // console.log(amount)
-        var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
+        var msg = $('.informationProvided').val();
+        var send = await contract.methods.sendData(recAcc,msg,50).send({from : userAcc}).then( function () {
             contract.methods.balances(userAcc).call().then( function(bal) {
-                $('.balance').text(bal);
+                $('.balance').text(balances);
             });
-        });
-
-        window.location.href = "http://localhost:3000/payment";
+        })
+        var data = await contract.methods.getData().call().then( async function(data) {
+            var xd = await $('.balance').text(balances);
+            console.log(data);
+            return data;
+        })
+        var str = 'http://localhost:3000/successUser/:' + data[0] +'/:' + data[1]; 
+        window.location.href = str;
     })
 })
 
