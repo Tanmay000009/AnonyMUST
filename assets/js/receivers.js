@@ -4,7 +4,7 @@ $(document).ready(async function() {
     console.log("HIIIIIIIIIIIIIIIIIIIIIIIIIII")
     web3 = new Web3(web3.currentProvider);
     
-    var address = "0x154270Ce1F3017093478e24e7cadd1eb243a487A";
+    var address = "0xdfA431bC5bb061Bf72B0060F4A55414A7A1d2caA";
 
     var abi = [
         {
