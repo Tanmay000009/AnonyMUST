@@ -236,6 +236,12 @@ $(document).ready(async function() {
     })
     $(".infoisnotverified").click(async function(event) {
         event.preventDefault();
+        var id = $('.infoid').text();
+        id = id.slice(1,);
+        id = Number(id);
+
+        var str = 'https://hackersxd.herokuapp.com/decline/:' + id;
+        window.location.href = str;
     })
 })
 
