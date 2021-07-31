@@ -48,6 +48,7 @@
                                     </div>
                                     <hr>
                                 <% } %>
+
                                 <% if (info) {%>
                                 <span class="infoid" style="visibility: hidden;"><%= info.id %></span>
                                 <% } %>
@@ -56,9 +57,14 @@
 
                                 <div class="row">
                                     <div class="col-sm-12">
+                                        <% if (info) {%>
                                         <a class="btn btn-info " href="#"><%= info.filekamsg %></a>
                                         <a class="btn btn-info infoisverified"  href="#">Verify</a>
                                         <a class="btn btn-info infoisnotverified"  href="#">Decline</a>
+                                        <% } else {%>
+                                            <a class="btn btn-info " href="#">No files uploaded</a>
+                                            <% } %>
+                                        
 
                                     </div>
                                 </div>
