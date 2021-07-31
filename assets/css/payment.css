@@ -7,16 +7,16 @@ body {
     outline: 0!important;
     height: 42px;
     font-size: 16px;
-    background-color: #54C7C3!important;
+    background-color: #4154f1!important;
     border: none;
   }
   
   #PayButton:hover {
-    background-color: #6DCECB!important;
+    background-color: #6573f1!important;
   }
   
   #PayButton:active {
-    background-color: #4FBCB9!important;
+    background-color: #6573f1!important;
   }
   
   #PayButton:disabled {
