@@ -9,10 +9,12 @@ module.exports.createSession = async function(req, res){
         }
     });
     info = info[0];
+    if (info) {
     if (info.files == 0) {
         info.filekamsg = "No files uploaded"
     } else {
         info.filekamsg = "Download files"
+    }
     }
     return res.render('receivers',{info : info});
 }
