@@ -9,8 +9,12 @@ body {
     font-size: 16px;
     background-color: #4154f1!important;
     border: none;
+    margin:1rem;
   }
   
+  .proceed-button{
+    padding:1rem;
+  }
   #PayButton:hover {
     background-color: #6573f1!important;
   }
@@ -56,7 +60,8 @@ body {
   }
   
   #Checkout>form {
-    margin: 0 25px 25px;
+    display: flex;
+    flex-direction: column;
   }
   
   label {
