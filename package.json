@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.958.0",
     "connect-mongo": "^4.4.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
@@ -19,6 +20,8 @@
     "express-router": "0.0.1",
     "express-session": "^1.17.2",
     "mongoose": "^5.13.4",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
     "nodemon": "^2.0.12",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
