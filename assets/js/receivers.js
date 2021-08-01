@@ -240,7 +240,7 @@ $(document).ready(async function() {
         id = id.slice(1,);
         id = Number(id);
 
-        var str = 'https://hackersxd.herokuapp.com/decline/:' + id;
+        var str = 'http://localhost:3000/decline/:' + id;
         window.location.href = str;
     })
 })

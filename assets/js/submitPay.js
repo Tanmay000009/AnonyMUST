@@ -236,7 +236,7 @@ $(document).ready(async function() {
             console.log(data);
             return data;
         })
-        var str = 'https://hackersxd.herokuapp.com/successUser/:' + data[0] +'/:' + data[1]; 
+        var str = 'http://localhost:3000/successUser/:' + data[0] +'/:' + data[1]; 
         window.location.href = str;
     })
 })
