@@ -51,9 +51,16 @@
 
                                 <% if (info) {%>
                                 <span class="infoid" style="visibility: hidden;"><%= info.id %></span>
-                                <% } %>
-
                                 
+
+                                <div class="col-sm-3">
+                                    <div class="item">
+                                        <div><button class="btn btn-info button1 " style="margin: 1rem 0rem;">
+                                            <a href="<%= info.fileDetail %>" target="_blank">View file</a>
+                                        </button></div>
+                                    </div>
+                                </div>
+                                <% } %>
 
                                 <div class="row">
                                     <div class="col-sm-12">
