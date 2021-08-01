@@ -2,7 +2,12 @@ body {
     background: #FEF8F8;
   }
   
-  
+  .h1{
+    background: #4154f1;
+    color: white ;
+    font-weight: 450;
+  }
+
   #PayButton {
     outline: 0!important;
     height: 42px;
@@ -59,9 +64,19 @@ body {
     border-top-right-radius: 8px;
   }
   
+
+  .balance-text{
+    text-align: center;
+    padding: 0.7rem;
+    border: 2px solid #4154f1;
+    box-shadow: 1px 4px #4154f1;
+    margin: 1rem;
+
+  }
   #Checkout>form {
     display: flex;
     flex-direction: column;
+    margin: 5rem 0.5rem;
   }
   
   label {
