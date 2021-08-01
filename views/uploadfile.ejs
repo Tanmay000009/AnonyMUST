@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title> Upload </title>
-    <link rel="stylesheet" href="/public/css/home.css">
+    <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-    <form action="/upload" enctype="multipart/form-data" method="post">
-        <input type="hidden" name="id" value="<%= id %>" />
-        <input type="file" name="information" multiple="multiple" /><br/>
-        <input type="submit" value="Upload" />
-      </form>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <h2 class="active"> Uplaod information </h2>
+          <form action="/upload" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="id" value="<%= id %>" />
+            <input type="file" name="information"  class="fadeIn second" multiple="multiple" /><br/>
+            <input type="submit" class="fadeIn third" value="Upload" />
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+              All file types are supported
+          </div>
+      
+        </div>
+      </div>
 </body>
 </html>
