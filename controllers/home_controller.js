@@ -1,5 +1,7 @@
 const Information = require('../models/information');
 
+
+
 module.exports.home = function (req, res) {
     res.render('index', {user : req.user});
 };
@@ -19,13 +21,13 @@ module.exports.submitPay = function (req, res) {
 module.exports.successUser = function (req, res) {
   var id = req.params.id;
   var msg = req.params.msg;
-  Information.create({id : id, msg: msg, status : "tbd",files : 0},(err,info) => {
+  Information.create({id : id, msg: msg, status : "tbd",files : 0,fileDetail : '0'},(err,info) => {
     if (err) {
       console.log("Error in creating info",err);
       res.redirect('back')
     }
   })
-  res.render('successUser');
+  res.render('uploadfile',{id : id});
 };
 
 module.exports.verify = async function (req, res) {
@@ -71,4 +73,15 @@ module.exports.decline = async function (req, res) {
   }
 }
   return res.render('receivers',{info : info});
+};
+
+module.exports.upload = async function (req, res) {
+  link = req.file.location;
+  var info = await Information.findOneAndUpdate({id : req.body.id}, {fileDetail : link},(err,info) => {
+    if (err) {
+      console.log("Error in creating info",err);
+      res.redirect('back')
+    }
+    })
+  res.render('successUser');
 };

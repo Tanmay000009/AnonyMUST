@@ -1,4 +1,5 @@
 const express = require('express');
+const { upload } = require("../controllers/s3uploadClient");
 
 const router = express.Router();
 const homeController = require('../controllers/home_controller');
@@ -11,7 +12,8 @@ router.get('/submitPay',homeController.submitPay);
 router.get('/successUser/:id/:msg',homeController.successUser);
 router.get('/verify/:id',homeController.verify);
 router.get('/decline/:id',homeController.decline);
-//router.get('/about', homeController.about);
+
+router.post('/upload',upload.single("information") ,homeController.upload);
 
 router.use('/users', require('./user'));
 

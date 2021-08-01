@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Upload </title>
+    <link rel="stylesheet" href="/public/css/home.css">
+</head>
+<body>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="id" value="<%= id %>" />
+        <input type="file" name="information" multiple="multiple" /><br/>
+        <input type="submit" value="Upload" />
+      </form>
+</body>
+</html>
