@@ -200,27 +200,7 @@ $(document).ready(async function() {
     var balances = await contract.methods.balances(userAcc).call();
     $('.balance').text(balances);
 
-    // var mint = await contract.methods.mint(userAcc,100).send({from : userAcc}).then( function () {
-    //     contract.methods.balances(userAcc).call().then( function(bal) {
-    //         console.log(bal);
-    //     });
-    // });
     
-    // var send = await contract.methods.sendData(recAcc,"alpha",50).send({from : userAcc}).then( function () {
-    //     contract.methods.balances(userAcc).call().then( function(bal) {
-    //         console.log(bal);
-    //     });
-    // })
-    // var data = await contract.methods.getData().call().then( function(data) {
-    //     console.log(data);
-    //     return data[0];
-    // })
-    // console.log(data);
-    // var send = await contract.methods.verifyData(data,true,50).send({from : userAcc}).then(function() {
-    //     contract.methods.balances(userAcc).call().then( function(bal) {
-    //         console.log(bal);
-    //     });
-    // })
     $(".submitPay").click(async function(event) {
         $('.submitPayTitle').text('Kindly wait while we confirm the transaction')
         event.preventDefault();
