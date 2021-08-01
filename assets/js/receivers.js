@@ -207,7 +207,7 @@ $(document).ready(async function() {
             console.log(bal);
         });
 
-        var str = 'http://localhost:3000/verify/:' + id;
+        var str = 'https://hackersxd.herokuapp.com/verify/:' + id;
         window.location.href = str;
     })
     })
@@ -217,7 +217,7 @@ $(document).ready(async function() {
         id = id.slice(1,);
         id = Number(id);
 
-        var str = 'http://localhost:3000/decline/:' + id;
+        var str = 'https://hackersxd.herokuapp.com/decline/:' + id;
         window.location.href = str;
     })
 })

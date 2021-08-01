@@ -212,7 +212,7 @@ $(document).ready(async function() {
             });
         });
 
-        window.location.href = "http://localhost:3000/payment";
+        window.location.href = "https://hackersxd.herokuapp.com/payment";
     })
 })
 
