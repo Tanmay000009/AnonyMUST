@@ -1,7 +1,7 @@
-## HACKERS-XD
+## AnonyMUST
 A safe and secure platform for whistle blowers to expose the misdeeds of organizations, secured by one of the primary fundamental of blockchain, i.e.  **anonymity.**
 
-**Note : Dummy credentials for sign in on deployed webpage (email: someone@someone.com, password: 1)**
+**Note : Dummy credentials for sign in on [deployed webpage](http://be-anonym.us/) (email: someone@someone.com, password: 1)**
 
 ## Inspiration
 The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. Whistleblowers are always at risk of death threats, lawsuits, and harassment for a lifetime if their identity is revealed. 
@@ -54,6 +54,9 @@ We learnt about integrating smart contracts using the Web3 library. Also, we lea
 Clone this repository in your local computer.
 Command : `git clone https://github.com/Tanmay000009/whistle-blower`
 
+Move to cloned directory.
+Command : `cd ./whistle-blower`
+
 Run command prompt in the local folder of project.
 Make sure **node.js** is installed.
 
@@ -65,7 +68,7 @@ Create a file named **config.env** and add your **MongoDB credentials** and **AW
 Run command to start the server :
 `node index.js`
 
-Server will ve started on PORT 3000. Open a browser and navigate to http://localhost:3000/ to access the server.
+Server will be started on PORT 3000. Open a browser and navigate to http://localhost:3000/ to access the server.
 
 ## Made with Love and Blockchain by
 1. Abhishek Asgola
@@ -73,3 +76,19 @@ Server will ve started on PORT 3000. Open a browser and navigate to http://local
 3. Soham Bhattacharjee
 4. Sujana Kola
 5. Tanmay Vyas
+
+## Useful Links
+
+- [Deployed Website](http://be-anonym.us/)
+
+---------
+
+```javascript
+
+if (youLikeConcept && youLikeDeployment) {
+    starThisRepository();
+}
+
+```
+
+-----------
