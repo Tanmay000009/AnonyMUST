@@ -4,7 +4,7 @@ A safe and secure platform for whistle blowers to expose the misdeeds of organiz
 **Note : Dummy credentials for sign in on deployed webpage (email: someone@someone.com, password: 1)**
 
 ## Inspiration
-The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. And whistleblowers are always at risk of death threats, lawsuits, and harassment for a lifetime if their identity is revealed. 
+The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. Whistleblowers are always at risk of death threats, lawsuits, and harassment for a lifetime if their identity is revealed. 
 
 ## What it does
 We've created a platform for whistleblowers, to connect them to media outlets without the risk of their identity being revealed. We've used Blockchain and its principle concept of anonymity to empower whistleblowers. We act as middleware between whistleblowers and media houses. 
@@ -19,10 +19,10 @@ We've created a platform for whistleblowers, to connect them to media outlets wi
 </ul>
 
 ## How to use it
-For submitting information, we have a button on our homepage named : "Become a whistleblower". On clicking it one will see two buttons named Add 100 tokens and Proceed. Balance of the user will also be shown. As our web portal is based on blockchain, currently we accept our own token as a mode of transactions. For getting our token, currently, we have the feature of Add 100 tokens enabled for free. For getting tokens, one must have [Metamask](https://metamask.io/) extension in their browser, make sure to be on a test network to avoid paying real cryptocurrency as a gas fee. If you feel you have enough tokens, you can proceed further, where you first add the title of the information and pay a fee of 50 tokens. Next, you'll be redirected to the file upload portal (currently restricted to 1 file, due to limited monetary resources ). For the file verify feature, you have to sign in using the button provided on the homepage. Dummy credentials for sign in (email: someone@someone.com, password: 1)
+For submitting information, we have a button on our homepage named : **"Become a whistleblower"**. On clicking it one will see two buttons named Add 100 tokens and Proceed. Balance of the user will also be shown. As our web portal is based on blockchain, currently we accept our own token as a mode of transactions. For getting our token, currently, we have the feature of Add 100 tokens enabled for free. For getting tokens, one must have [Metamask](https://metamask.io/) extension in their browser, make sure to be on a test network to avoid paying real cryptocurrency as a gas fee. If you feel you have enough tokens, you can proceed further, where you first add the title of the information and pay a fee of 50 tokens. Next, you'll be redirected to the file upload portal (currently restricted to 1 file, due to limited monetary resources ). For the file verify feature(currently maade public), you have to sign in using the button provided on the homepage. Dummy credentials for sign in (email: someone@someone.com, password: 1)
 
 ## How we built it
-First, the front end was integrated with the backend. Smart Contract was written in solidity on top of Ethereum blockchain and deployed on the remix. We connect our web application to the smart contract, using the web3 library, and are currently doing transactions using Metamask and on rinkby test network. 
+First, the front end was integrated with the backend. Smart Contract was written in solidity on top of Ethereum blockchain and deployed on the remix. We connected our web application to the smart contract, using the [Web3](https://web3js.readthedocs.io/en/v1.4.0/) library, and are currently doing transactions using [Metamask](https://metamask.io/) and on rinkby test network. 
 
 ## Challenges we ran into
 <ul>
@@ -34,7 +34,7 @@ First, the front end was integrated with the backend. Smart Contract was written
 
 ## Accomplishments that we're proud of
 We've made a fully functional and deployed web app which we aimed at. On our web app, anyone can be a whistleblower, provided they have metamask and few Wei's on rinkby test network, as well as the information provided by them, can be seen on our portal and functionality of verifying it is added as well.
-Note: For verifiers, they might be seeing different information at first as we only allow verifiers to see 1 information at a time, and no new information unless they have provided a verdict on the current one.
+Note: For verifiers, if you submitted some information and want to go and check for the same on verifying portal, you might be seeing different information at first as we only allow verifiers to see 1 information at a time, and no new information unless they have provided a verdict on the current one. Once you provide verdict on all the previous ones, which were already in database, you'll also be able to see the information you submitted.
 
 ## What we learned
 We learnt about integrating smart contracts using the Web3 library. Also, we learnt about deploying smart contracts on remix platform.
