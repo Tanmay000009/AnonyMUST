@@ -80,7 +80,9 @@ We learnt about integrating smart contracts using the Web3 library. Also, we lea
    ```
 
 3. Run command prompt in the local folder of project.
-   Make sure **[node.js](https://nodejs.org/en/)** is installed.
+   <ul>
+    <li>Make sure **[node.js](https://nodejs.org/en/)** is installed.</li>
+   </ul>
    Run the command to install required npm packages :
    ```sh
    npm i
