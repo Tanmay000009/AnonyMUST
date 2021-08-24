@@ -67,6 +67,6 @@ Server will ve started on PORT 3000. Open a browser and navigate to http://local
 ## Made with Love and Blockchain by
 1. Abhishek Asgola
 2. Riya Bansal
-3. Sujana Kola
-4. Tanmay Vyas
-5. Soham Bhattacharjee
+3. Soham Bhattacharjee
+4. Sujana Kola
+5. Tanmay Vyas
