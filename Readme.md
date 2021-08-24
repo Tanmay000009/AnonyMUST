@@ -76,7 +76,7 @@ Move to cloned directory.
 Command : `cd ./whistle-blower`
 
 Run command prompt in the local folder of project.
-Make sure **node.js** is installed.
+Make sure **[node.js](https://nodejs.org/en/)** is installed.
 
 Run the command to install required npm packages :
 `npm i`
