@@ -1,29 +1,7 @@
 ## HACKERS-XD
 A safe and secure platform for whistle blowers to expose the misdeeds of organizations, secured by one of the primary fundamental of blockchain, i.e.  **anonymity.**
 
-## Getting Started
-Clone this repository in your local computer.
-Command : `git clone [https://github.com/Tanmay000009/whistle-blower`](https://github.com/Tanmay000009/whistle-blower%60)
-
-Run command prompt in the local folder of project.
-Make sure **node.js** is installed.
-
-Run the command :
-`npm i`
-
-Create a file named **config.env** and add your **MongoDB** credentials.
-
-Run command :
-`node index.js`
-
-## Made with Love and Blockchain by
-1. Abhishek Asgola
-2. Riya Bansal
-3. Sujana Kola
-4. Tanmay Vyas
-5. Soham Bhattacharjee
-
-**Note : Dummy credentials for sign in (email: someone@someone.com, password: 1)**
+**Note : Dummy credentials for sign in on deployed webpage (email: someone@someone.com, password: 1)**
 
 ## Inspiration
 The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. And whistleblowers are always at risk of death threats, lawsuits, and harassment for a lifetime if their identity is revealed. 
@@ -68,3 +46,27 @@ We learnt about integrating smart contracts using the Web3 library. Also, we lea
 <li>Improving the smart contract to fix the loopholes</li>.
 <li>Adding incentives for the users.</li>
 </ul>
+
+## Get your own copy of the project
+Clone this repository in your local computer.
+Command : `git clone https://github.com/Tanmay000009/whistle-blower`
+
+Run command prompt in the local folder of project.
+Make sure **node.js** is installed.
+
+Run the command to install required npm packages :
+`npm i`
+
+Create a file named **config.env** and add your **MongoDB credentials** and ** AWS credentials**.
+
+Run command to start the server :
+`node index.js`
+
+Server will ve started on PORT 3000. Open a browser and navigate to http://localhost:3000/ to access the server.
+
+## Made with Love and Blockchain by
+1. Abhishek Asgola
+2. Riya Bansal
+3. Sujana Kola
+4. Tanmay Vyas
+5. Soham Bhattacharjee
