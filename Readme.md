@@ -43,7 +43,7 @@ We learnt about integrating smart contracts using the Web3 library. Also, we lea
 <ul>
 <li>Malware detection in the files.</li>
 <li>Authentication using captchas.</li>
-<li>Improving the smart contract to fix the loopholes</li>.
+<li>Improving the smart contract to fix the loopholes</li>
 <li>Adding incentives for the users.</li>
 </ul>
 
