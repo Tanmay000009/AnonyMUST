@@ -1,6 +1,8 @@
 ## AnonyMUST
 A safe and secure platform for whistle blowers to expose the misdeeds of organizations, secured by one of the primary fundamental of blockchain, i.e.  **anonymity.**
 
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/LandingPage.png" alt="Landing-Page-Image"/>
+
 **Note : Dummy credentials for sign in on [deployed webpage](http://be-anonym.us/) (email: someone@someone.com, password: 1)**
 
 ## Inspiration
@@ -26,7 +28,14 @@ We've created a platform for whistleblowers, to connect them to media outlets wi
 <img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/Methodology.png" alt="Methodology"/>
 
 ## How to use it
-For submitting information, we have a button on our homepage named : **"Become a whistleblower"**. On clicking it one will see two buttons named Add 100 tokens and Proceed. Balance of the user will also be shown. As our web portal is based on blockchain, currently we accept our own token as a mode of transactions. For getting our token, currently, we have the feature of Add 100 tokens enabled for free. For getting tokens, one must have [Metamask](https://metamask.io/) extension in their browser, make sure to be on a test network to avoid paying real cryptocurrency as a gas fee. If you feel you have enough tokens, you can proceed further, where you first add the title of the information and pay a fee of 50 tokens. Next, you'll be redirected to the file upload portal (currently restricted to 1 file, due to limited monetary resources ). For the file verify feature(currently maade public), you have to sign in using the button provided on the homepage. Dummy credentials for sign in (email: someone@someone.com, password: 1)
+For submitting information, we have a button on our homepage named : **"Become a whistleblower"**. On clicking it one will see two buttons named Add 100 tokens and Proceed.
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/AddTokens.png" alt="Add-Tokens-Image"/>
+Balance of the user will also be shown. As our web portal is based on blockchain, currently we accept our own token as a mode of transactions. For getting our token, currently, we have the feature of Add 100 tokens enabled for free. For getting tokens, one must have [Metamask](https://metamask.io/) extension in their browser, make sure to be on a test network to avoid paying real cryptocurrency as a gas fee. 
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/AddingTokens.png" alt="Add-Tokens-Demo"/>
+If you feel you have enough tokens, you can proceed further, where you first add the title of the information and pay a fee of 50 tokens.
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/PayAndProceed.png" alt="Add-Title-Demo"/>
+Next, you'll be redirected to the file upload portal (currently restricted to 1 file, due to limited monetary resources ). For the file verify feature(currently maade public), you have to sign in using the button provided on the homepage. Dummy credentials for sign in (email: someone@someone.com, password: 1)
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/Dashboard.png" alt="Verify-Dashboard"/>
 
 ## How we built it
 First, the front end was integrated with the backend. Smart Contract was written in solidity on top of Ethereum blockchain and deployed on the remix. We connected our web application to the smart contract, using the [Web3](https://web3js.readthedocs.io/en/v1.4.0/) library, and are currently doing transactions using [Metamask](https://metamask.io/) and on rinkby test network. 
