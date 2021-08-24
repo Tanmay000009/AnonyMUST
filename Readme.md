@@ -57,7 +57,7 @@ Make sure **node.js** is installed.
 Run the command to install required npm packages :
 `npm i`
 
-Create a file named **config.env** and add your **MongoDB credentials** and ** AWS credentials**.
+Create a file named **config.env** and add your **MongoDB credentials** and **AWS credentials**.
 
 Run command to start the server :
 `node index.js`
