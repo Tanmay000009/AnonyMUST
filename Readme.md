@@ -69,22 +69,29 @@ We learnt about integrating smart contracts using the Web3 library. Also, we lea
 </ul>
 
 ## Get your own copy of the project
-Clone this repository in your local computer.
-Command : `git clone https://github.com/Tanmay000009/whistle-blower`
+1. Clone this repository in your local computer.
+    ```sh
+    git clone https://github.com/Tanmay000009/whistle-blower
+    ```
 
-Move to cloned directory.
-Command : `cd ./whistle-blower`
+2. Move to cloned directory.
+   ```sh
+   cd ./whistle-blower
+   ```
 
-Run command prompt in the local folder of project.
-Make sure **[node.js](https://nodejs.org/en/)** is installed.
+3. Run command prompt in the local folder of project.
+   Make sure **[node.js](https://nodejs.org/en/)** is installed.
+   Run the command to install required npm packages :
+   ```sh
+   npm i
+   ```
 
-Run the command to install required npm packages :
-`npm i`
+4. Create a file named **config.env** and add your **MongoDB credentials** and **AWS credentials**.
 
-Create a file named **config.env** and add your **MongoDB credentials** and **AWS credentials**.
-
-Run command to start the server :
-`node index.js`
+5. Run command to start the server :
+   ```sh
+   node index.js
+   ```
 
 Server will be started on PORT 3000. Open a browser and navigate to http://localhost:3000/ to access the server.
 
