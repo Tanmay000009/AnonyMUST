@@ -9,6 +9,12 @@ The inspiration came from the movie Edward Snowden, that a person who is bringin
 ## What it does
 We've created a platform for whistleblowers, to connect them to media outlets without the risk of their identity being revealed. We've used Blockchain and its principle concept of anonymity to empower whistleblowers. We act as middleware between whistleblowers and media houses. 
 
+### For the Whistleblowers
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/ForTheWhistleblowers.png" alt="For the Whistleblowers image"/>
+
+### For the Media-Outlets 
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/ForTheMedia-Outlets.png" alt="For the Media-Outlets image"/>
+
 ## HOW  DO WE DO IT?
 <ul>
 <li>The whistleblower will be able to upload documents on our portal by paying a fee</li>
@@ -17,6 +23,7 @@ We've created a platform for whistleblowers, to connect them to media outlets wi
 <li>If the news is genuine, then the media outlet will send a notification to the organization, and then the amount will be returned to the whistleblower.</li>
 <li>But if the information is fake, the organization will keep the money and it will be used for technical purposes </li>
 </ul>
+<img src="https://github.com/Tanmay000009/AnonyMUST/blob/master/assets/img/Methodology.png" alt="Methodology"/>
 
 ## How to use it
 For submitting information, we have a button on our homepage named : **"Become a whistleblower"**. On clicking it one will see two buttons named Add 100 tokens and Proceed. Balance of the user will also be shown. As our web portal is based on blockchain, currently we accept our own token as a mode of transactions. For getting our token, currently, we have the feature of Add 100 tokens enabled for free. For getting tokens, one must have [Metamask](https://metamask.io/) extension in their browser, make sure to be on a test network to avoid paying real cryptocurrency as a gas fee. If you feel you have enough tokens, you can proceed further, where you first add the title of the information and pay a fee of 50 tokens. Next, you'll be redirected to the file upload portal (currently restricted to 1 file, due to limited monetary resources ). For the file verify feature(currently maade public), you have to sign in using the button provided on the homepage. Dummy credentials for sign in (email: someone@someone.com, password: 1)
