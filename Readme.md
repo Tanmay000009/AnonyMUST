@@ -6,7 +6,7 @@ A safe and secure platform for whistle blowers to expose the misdeeds of organiz
 **Note : Dummy credentials for sign in on [deployed webpage](http://be-anonym.us/) (email: someone@someone.com, password: 1)**
 
 ## Inspiration
-The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. Whistleblowers are always at risk of death threats, lawsuits, and harassment for a lifetime if their identity is revealed. 
+The inspiration came from the movie Edward Snowden, that a person who is bringing out the misdeeds is debarred from his own country. Whistleblowers are always at risk of death threats, lawsuits and harassment for a lifetime if their identity is revealed. 
 
 ## What it does
 We've created a platform for whistleblowers, to connect them to media outlets without the risk of their identity being revealed. We've used Blockchain and its principle concept of anonymity to empower whistleblowers. We act as middleware between whistleblowers and media houses. 
